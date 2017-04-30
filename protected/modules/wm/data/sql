@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS `wmoptions` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `purse` varchar(13) NOT NULL,
+  `secret` varchar(50) NOT NULL,
+  `mode` int(1) unsigned NOT NULL,
+  PRIMARY KEY  (`id`)
+);
+
+INSERT INTO `wmoptions` (`id`, `purse`, `secret`, `mode`) VALUES
+(1, 'Z987456321023', '123456', 9);
